@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { LineChart as LChart, Line, XAxis, YAxis } from 'recharts';
 const LineChart = () => {
     const studentMarks = [
         { id: 1, name: "Alice", mathMarks: 85 },
@@ -17,7 +17,12 @@ const LineChart = () => {
       
     return (
         <div>
-            
+            <LChart width={500} height={300} data={studentMarks}>
+            <Line type="monotone" dataKey="mathMarks" stroke="#8884d8" />
+                {/* <Line type="" dataKey="pv" stroke="#82ca9d" /> */}
+                <XAxis dataKey="name" />
+                <YAxis />
+           </LChart>
         </div>
     );
 };
