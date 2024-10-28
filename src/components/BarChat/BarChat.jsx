@@ -35,7 +35,7 @@ const BarChat = () => {
         { id: 10, name: "Judy", mathMarks: 87, physicsMarks: 82, chemistryMarks: 85 }
       ];
     return (
-        <div className='my-28'>
+        <div className='my-12'>
             {/* <ResponsiveContainer width="100%" height="100%"> */}
             <BChart  width={500} height={300} data={studentMarks}>
             <XAxis dataKey="name" />

@@ -3,6 +3,7 @@ import BarChat from './components/BarChat/BarChat'
 import DaisyNav from './components/DaisyNav/DaisyNav'
 import LineChart from './components/LineChart/LineChart'
 import NavBar from './components/NavBar/NavBar'
+import Phones from './components/Phones/Phones'
 import PriceOptions from './components/PriceOptions/PriceOptions'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <PriceOptions></PriceOptions>
       <LineChart></LineChart>
       <BarChat></BarChat>
+      <Phones></Phones>
     </>
   )
 }
