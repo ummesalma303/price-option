@@ -23,7 +23,7 @@ const PriceOption = ({ price }) => {
             <span className="text-xl">{name}</span>
             <div className="mt-9 flex-grow">
                 {
-                    features.map(feature=><Feature feature={feature}></Feature>)
+                    features.map((feature,i)=><Feature key={i} feature={feature}></Feature>)
                 }
             </div>
             <button className='w-full py-2 mt-4 bg-white text-blue-500'>Buy Now</button>
